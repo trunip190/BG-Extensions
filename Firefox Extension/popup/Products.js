@@ -1,5 +1,6 @@
 /* jshint esversion: 6 */
 const products = [
+    '',
     'ABH-012832D#$#0128 32D',
     'ABH-018032d#$#0180 32D',
     'ABH-1022A32D#$#1022A 32D CONCEALED',
