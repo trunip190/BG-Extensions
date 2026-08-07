@@ -1,0 +1,23 @@
+{
+	"name": "BG Search",
+	"description":"Product searcher for BG Distribution internal items.",
+	"version": "1.0",
+	"manifest_version": 3,
+	"action": {
+		"default_icon": "icons/border-48.png",
+		"default_title": "BG Search",
+		"default_popup": "popup/choose_Product.html"
+	},	
+	"icons": {
+		"48": "icons/border-48.png"
+	},
+	
+	"browser_specific_settings": {
+		"data_collection_permissions": {
+			"required": ["none"] 
+		}
+	},
+	"content_security_policy": {
+		"extension_pages": "script-src 'self'"
+  }
+}

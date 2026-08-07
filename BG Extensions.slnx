@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Chrome Extension/Chrome Extension.csproj" Id="f55cfe8b-7520-4836-8040-4d06695f610c" />
+  <Project Path="Firefox Extension/Firefox Extension.csproj" Id="46bbfae4-d156-4505-a63c-ed93651f37ae" />
+</Solution>

@@ -1,0 +1,26 @@
+{
+	"name": "BG Search",
+	"description":"Product searcher for BG Distribution internal items.",
+	"version": "1.0.1",
+	"manifest_version": 3,
+	"action": {
+		"default_icon": "icons/border-48.png",
+		"default_title": "BG Search",
+		"default_popup": "popup/choose_Product.html"
+	},
+	"icons": {
+		"48": "icons/border-48.png"
+	},	
+	"browser_specific_settings": {
+		"gecko": {
+			"id":"ProductSearcher@BGSearch.com",
+			"data_collection_permissions": {
+				"required": ["none"] 
+			},
+				"update_url": "https://www.dropbox.com/scl/fi/bg0epdqzfj74ifdfhi827/Update-Manifest.json?rlkey=qcxhgyzfl4tlxfso6wrjcnh99&st=u3hzi4bl&dl=0"
+		}
+	},
+	"content_security_policy": {
+		"extension_pages": "script-src 'self'"
+  }
+}
