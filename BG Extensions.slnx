@@ -1,4 +1,6 @@
 <Solution>
+  <Project Path="AWS/AWS.csproj" Id="e90a8269-6869-4e8a-a921-11821b8e1675" />
   <Project Path="Chrome Extension/Chrome Extension.csproj" Id="f55cfe8b-7520-4836-8040-4d06695f610c" />
   <Project Path="Firefox Extension/Firefox Extension.csproj" Id="46bbfae4-d156-4505-a63c-ed93651f37ae" />
+  <Project Path="Wix/Wix.csproj" Id="ce182536-9354-45e9-b6cd-10efe67a4d7e" />
 </Solution>

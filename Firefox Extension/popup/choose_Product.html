@@ -1,43 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title id="title">BG Product Searcher</title>
-	<style>
-		body {
-			width: auto;
-			min-width: 300px;
-		}
-		table {
-			table-layout: auto;
-			min-width: 150px;
-		}
-		td {
-			table-layout: auto;
-			min-width: 150px;
-		}
-	</style>
+    <meta charset="utf-8" />
+    <title id="title">BG Product Searcher</title>
+    <style>
+        body {
+            width: auto;
+            min-width: 150px;
+            width: fit-content;
+        }
+
+        table {
+            table-layout: auto;
+            min-width: 150px;
+            width: fit-content;
+            border-collapse: collapse;
+            vertical-align: top;
+        }
+
+        td, th {
+            table-layout: auto;
+            /*min-width: 150px;*/
+            width: fit-content;
+            overflow: auto;
+            vertical-align: top;
+            text-align: left;
+            padding: 4px;
+        }
+
+        div {
+            border: 0;
+            width: auto;
+            height: auto;
+            min-height: 20px;
+            min-width: 20px;
+            overflow: auto;
+        }
+    </style>
 </head>
-<body>	
-	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-		window.focus();
-	});
-	</script>
-	<script src="Products.js">
-	</script>
-	<input id="filter_text" tabindex="0"><br>
-	
-	<a id="searchterm" hidden >Search Term</a>
-	<a id="count" hidden>Found: </a>
-	<div id="scrollTable" style="height:0px;overflow:auto">
-		<table>
-			<tbody id="resulttable" > 
-			</tbody>
-		</table>
-	</div>
-	<a id="results"></a>
-	
-	<script src="BGSearch.js">
-	</script>
+<body>
+    <script src="Products.js">
+    </script>
+    <input id="filter_text" tabindex="0" autofocus><br>
+
+    <a id="searchterm" hidden>Search Term</a>
+    <a id="count" hidden>Found: </a>
+
+    <div>
+        <input type="radio" id="all" name="branch" value="all">
+        <label for="all">All stock</label>
+
+        <input type="radio" id="van" name="branch" value="van" checked>
+        <label for="van">Vancouver</label>
+    </div>
+
+    <div id="scrollTable" style="height:0px;overflow:auto">
+        <table>
+            <thead id="tableheaders">
+                <tr>
+                    <th>Product Code</th>
+                    <!--<th>Product Name</th>-->
+                    <th>Description</th>
+                    <!--<th>Active</th>-->
+                    <!--<th>Product Status</th>-->
+                    <th>Status</th>
+                    <th>Bin Location #1</th>
+                    <th>Bin Location #2</th>
+                    <!--<th>primaryCategoryName</th>-->
+                    <!--<th>primaryCategoryCode</th>-->
+                    <!--<th>Vendor Product</th>-->
+                </tr>
+            </thead>
+            <tbody id="resulttable">
+            </tbody>
+        </table>
+    </div>
+    <a id="results"></a>
+
+    <script src="BGSearch.js">
+    </script>
 </body>
 </html>
