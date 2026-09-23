@@ -37,6 +37,8 @@
     <None Include="manifest.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Releases\BG Search 1.0.4.zip" />
+    <None Include="Releases\BG Search-1.0.4.xpi" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons\border-192.png">
